@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #b6e6b5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #b6e6b5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #205e2d;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #1e3928;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.card {
+  background-color: #f2fff0;
+  border-radius: 20px;
+  padding: 30px 20px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+.plant-icon {
+  font-size: 1.5rem;
+}
+
+.card-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #144b2b;
+  text-align: center;
+  flex: 1;
+}
+
+.card-header h1 span {
+  display: block;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #0f3c1e;
+}
+
+form input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 2px solid #c4dec1;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+form input:focus {
+  border-color: #62a366;
+  outline: none;
+}
+
+button {
+  background-color: #16602b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #104d22;
+}
+
+.back-link {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #0f3c1e;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  .card-header h1 {
+    font-size: 1.3rem;
+  }
+
+  header nav a {
+    font-size: 0.9rem;
+  }
+}

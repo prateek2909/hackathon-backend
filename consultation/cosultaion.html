@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Consultation</title>
+    <link rel="stylesheet" href="consultion.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">🌿 AgriExpert</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Service</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="card-header">
+          <div class="icon">👨‍🌾</div>
+          <h1>Book a <br /><span>Consultation</span></h1>
+          <div class="plant-icon">🌱</div>
+        </div>
+
+        <form>
+          <label for="date"
+            ><i class="fas fa-calendar-alt"></i> Select Date</label
+          >
+          <input type="date" id="date" name="date" required />
+
+          <label for="time"><i class="fas fa-clock"></i> Select Time</label>
+          <input type="time" id="time" name="time" required />
+
+          <button type="submit">Book Now</button>
+          <a href="#" class="back-link">← Back to Home</a>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
